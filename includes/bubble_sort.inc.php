@@ -1,7 +1,7 @@
 <?php
 
 class BubbleSorter{
-    public $input_array;
+    protected $input_array;
     public function __construct($input_array){
         $this->input_array = $input_array;
     }
@@ -22,12 +22,15 @@ class BubbleSorter{
                         $isSorted = false;
             
                 }
-                if ($isSorted = true) return print_r($current_array);
+                if ($isSorted = true) return $current_array;
             }     
-        else return print_r($current_array);
+        else return $current_array;
     }
     
 }
+
+
+
 
 
 

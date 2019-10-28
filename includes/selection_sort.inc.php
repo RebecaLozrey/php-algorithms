@@ -1,7 +1,7 @@
 <?php
 
 class SelectionSorter {
-    public $input_array;
+    protected $input_array;
     public function __construct($input_array){
         $this->input_array = $input_array;
     }
@@ -25,9 +25,9 @@ class SelectionSorter {
                 $current_array[$i] = $current_array[$m];
                 $current_array[$m] = $temp;
             }
-            return print_r($current_array)."<br><br><br>";
+            return $current_array;
         }
-        else return print_r($current_array)."<br><br><br>";
+        else return $current_array;
     }
 
 
