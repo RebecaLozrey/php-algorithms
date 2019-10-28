@@ -23,14 +23,17 @@ include "includes/selection_sort.inc.php";
 </head>
 <body>
 <?php
-$array1 = array(3,6,9,3,5,2,8,9,1);
+$array1 = array(5,4,3,2,1);
 ?>
-<div class="d-inline-flex p-2">
-<h1>BUBBLE SORTER</h1>
+<h1>ORIGINAL ARRAY</h1>
 <?php
 $bubble_sorter = new BubbleSorter($array1);
 var_dump($bubble_sorter);
 echo "<br>";
+?>
+<div class="d-inline-flex p-2">
+<h1>BUBBLE SORTER</h1>
+<?php
 var_dump($bubble_sorter->bubble_sort());
 echo "<br>";
 echo "<br>";
@@ -41,8 +44,6 @@ echo "<br>";
 <h1>SELECT SORTER</h1>
 <?php
 $selection_sorter = new SelectionSorter($array1);
-var_dump($selection_sorter);
-echo "<br>";
 var_dump($selection_sorter->sel_sort());
 echo "<br>";
 echo "<br>";
